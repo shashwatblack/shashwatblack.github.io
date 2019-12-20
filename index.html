@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Shashwat Black</title>
+    <meta name="description" content="Shashwat Black">
+    <meta name="keywords" content="Shashwat Black, Computer Engineer, Kathmandu">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <style type="text/css">
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            src: url(./assets/Lato-Light.ttf)format('truetype')
+        }
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 700;
+            src: url(./assets/Lato-Bold.ttf)format('truetype')
+        }
+        .sprite {
+            background: url(./assets/sprite.png)no-repeat 0 0;
+            background-size: 180px 140px
+        }
+        .profile {
+            width: 60px;
+            height: 60px;
+            background-position: 0 0
+        }
+        .map {
+            width: 160px;
+            height: 80px;
+            background-position: 0 -60px
+        }
+        .github {
+            width: 30px;
+            height: 30px;
+            background-position: -90px 0
+        }
+        .linkedin {
+            width: 30px;
+            height: 30px;
+            background-position: -120px 0
+        }
+        .facebook {
+            width: 30px;
+            height: 30px;
+            background-position: -150px 0
+        }
+        .email {
+            width: 30px;
+            height: 30px;
+            background-position: -90px -30px
+        }
+        .resume {
+            width: 30px;
+            height: 30px;
+            background-position: -150px -30px
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        html {
+            -webkit-text-size-adjust: 100%
+        }
+        body,
+        html {
+            height: 100%
+        }
+        body {
+            min-width: 320px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            font-family: Lato, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11pt;
+            background: #1b1b1b;
+            color: #FFF
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 360px;
+            margin: 17%
+        }
+        .top:after,
+        .top:before {
+            content: " ";
+            display: table
+        }
+        .top:after {
+            clear: both
+        }
+        .profile {
+            float: left
+        }
+        .map {
+            float: right;
+            position: relative
+        }
+        #location {
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 41px;
+            top: 29px;
+            border-radius: 3px;
+            background-color: #FFF
+        }
+        .headline {
+            font-weight: 700;
+            font-size: 1.8em;
+            line-height: 1.1em
+        }
+        .subheadline {
+            font-weight: 300;
+            font-size: 1.12em;
+            line-height: 1.4em;
+            margin: 6px 0 22px 0;
+            padding-left: 10px;
+            color: #BABCBE;
+            border-left: 5px solid #0E83CD
+        }
+        .links {
+            margin: 0 0 45px 0
+        }
+        .links a {
+            margin-right: 4px;
+            display: inline-block;
+            -webkit-tap-highlight-color: transparent
+        }
+        .footnote {
+            font-size: .95em;
+            color: #BABCBE
+        }
+        .hvr-float {
+          display: inline-block;
+          vertical-align: top;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top">
+                <div class="sprite profile"></div>
+                <div class="sprite map">
+                    <div id="location"></div>
+                </div>
+            </div>
+            <h1 class="headline">Shashwat Black</h1>
+            <h2 class="subheadline">Software Developer - New York</h2>
+        </header>
+        <div class="links">
+            <a href="/resume" target="_blank" class="sprite resume hvr-float" type="application/pdf"></a>
+            <a href="https://facebook.com/shashwatblack" target="_blank" class="sprite facebook hvr-float"></a>
+            <a href="https://github.com/shashwatblack" target="_blank" class="sprite github hvr-float"></a>
+            <a href="https://linkedin.com/in/shashwatblack/" target="_blank" class="sprite linkedin hvr-float"></a>
+            <a href="mailto://shashwat.black@gmail.com" target="_blank" class="sprite email hvr-float"></a>
+        </div>
+        <footer>
+            <p class="footnote">© <script>document.write((new Date()).getFullYear())</script> Shashwat Black. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
